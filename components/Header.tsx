@@ -1,5 +1,6 @@
 import React from "react";
 import Lottie from "lottie-react";
+import coderboylogo from "../images/Coder boy.json";
 import { AppTab, UserProfile, UserRole } from "../types";
 
 interface HeaderProps {
@@ -21,6 +22,7 @@ const Header: React.FC<HeaderProps> = ({
     { id: AppTab.HOME, label: "Home" },
     { id: AppTab.MAGAZINES, label: "Magazines" },
     { id: AppTab.SEARCH, label: "Search" },
+    { id: AppTab.TEAM, label: "Our Team" },
     { id: AppTab.VIDEOS, label: "Workshops" },
   ];
 
@@ -38,9 +40,12 @@ const Header: React.FC<HeaderProps> = ({
           className="flex items-center space-x-2 cursor-pointer"
           onClick={() => onTabChange(isOrg ? AppTab.DASHBOARD : AppTab.HOME)}
         >
-          <div className="w-8 h-8 bg-indigo-600 rounded-lg flex items-center justify-center text-white font-black italic">
-            Ci
+          {/* Lottie Logo */}
+          <div className="w-8 h-8">
+            <Lottie animationData={coderboylogo} loop={true} autoplay={true} />
           </div>
+
+          {/* Brand Name */}
           <span className="text-xl font-black font-montserrat tracking-tighter text-slate-900 dark:text-white hidden sm:block">
             CreativeIndia
           </span>

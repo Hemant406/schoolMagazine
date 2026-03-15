@@ -5,6 +5,7 @@ export enum AppTab {
   SEARCH = 'search',
   VIDEOS = 'videos',
   PROFILE = 'profile',
+  TEAM ="team",
   DASHBOARD = 'dashboard', // For organizations
   MANAGE = 'manage'       // For organizations
 }

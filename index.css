@@ -10,5 +10,8 @@ html,body{
 } */
 
 ::selection{
-    color: #4f46e5;
+    /* color: #4f46e5; */
+    /* color: orange; */
+    /* color: skyblue; */
+    color: rgb(168, 175, 239)
 }
